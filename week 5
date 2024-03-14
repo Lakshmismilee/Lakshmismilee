@@ -1,0 +1,188 @@
+ class Hospital
+
+{
+
+//Instance variable
+
+String patientName;
+
+int patientid;
+
+//Static(class) variable
+
+static String DocName="Dr. Murthy";
+
+void sethospital(String pN ,int pld)
+
+{
+
+patientName=pN; patientid=pld;
+
+}
+
+String getpatientName()
+
+{
+
+return patientName;
+
+}
+
+int getpatientid()
+
+{
+
+return patientid;
+
+}
+
+}
+
+public class DemoScopeofVariables
+
+{
+
+public static void main(String args[])
+
+{
+
+//Local variable
+
+String hospitalName="Apollo Hospital";
+
+Hospital patient1=new Hospital();
+
+patient1.sethospital("Anita Joseph",101);
+
+System.out.println("The patient" +patient1.getpatientName()+" With the Id"
+
+jkqefgiiwrl;wr;hwhi;+patient1.getpatientid()+" is treated by" +patient1.DocName+"at"
+
++hospitalName);
+
+}
+
+}
+class values
+
+{
+
+byte Byte;
+
+int integer;
+
+long Long;
+
+short Short;
+
+boolean Boolean;
+
+String string;
+
+float Float;
+
+char ch;
+
+double Double;
+
+void getvalues()
+
+{
+
+System.out.println("The Default value of primitive datatype Byte: "+ Byte);
+
+System.out.println("The Default value of primitive datatype Integer: "+ integer);
+
+System.out.println("The Default value of primitive datatype long: "+ Long);
+
+System.out.println("The Default value of primitive datatype Short: "+ Short);
+
+System.out.println("The Default value of primitive datatype Boolean: "+Boolean);
+
+System.out.println("The Default value of string: "+ string); System.out.println("The
+
+Default value of primitive datatype Float: "+ Float);
+
+System.out.println("The Default value of primitive datatype char: "+ ch);
+
+System.out.println("The Default value of primitive datatype double: "+ Double);
+
+}
+
+}
+
+public class defaultvalues
+
+{
+
+public static void main(String[] args)
+
+{
+
+values var=new values();
+
+var.getvalues();
+}
+}
+
+class Student
+
+{
+
+String StudName,dept;
+
+int Rollno;
+
+static String clg = "GPT";
+
+int percentage;
+
+void setStudent(String Name, int rollno, String cdept,int per)
+
+{
+
+StudName=Name;
+
+Rollno = rollno;
+
+dept=cdept;
+
+percentage=per;
+
+}
+
+void getStudent()
+
+{
+
+System.out.println(StudName+"\t" +Rollno+"\t"+clg+"\t"+dept+"\t\t"+percentage);
+
+}
+
+}
+
+class Stud
+
+{
+
+public static void main(String args[])
+
+{
+
+System.out.println("Name\tRollnotCollege't Department't Percentage");
+
+Student Stud1= new Student();
+
+Student Stud2= new Student();
+
+Stud1.setStudent("Sindhu", 155,"CS",88);
+
+Stud2.setStudent("Madhu", 100, "EC",90);
+
+Stud1.getStudent();
+
+Stud2.getStudent();
+
+}
+
+}
